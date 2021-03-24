@@ -4,37 +4,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TextEditor</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
 </head>
-
-
-<body class="text-center container">
-    <main>
+<body>
+    <div class="main">
         <h1 class=" banner p-3 text-primary">TextEditor</h1>
-        <div class="row">
-            <div class="col">
-                <button id="bold" type="button" class="btn btn-light">Bold</button>
-                <button id="italic" type="button" class="btn btn-light">Italic</button>
-                <button id="underline" typ e="button" class="btn btn-light">Underline</button>
-                <button id="left-align" type="button" class="align btn btn-light"><i class="fas fa-align-left"></i></button>
-                <button id="center -align" type="button" class="align btn btn-light"><i class="fas fa-align-center"></i></button>
-                <button id="right-align" type="button" class="align btn btn-light"><i class="fas fa-align-right"></i></button>
-             </div>
-        </div> 
-    <hr />    
-    <div class="row editor">
         <div class="col">
-            <div class="form-group">
-                <label id="text-inputs">Your Document Text</label>
+            <button id="bold" type="button" class="btn btn-light">Bold</button>
+            <button id="italic" type="button" class="btn btn-light">Italic</button>
+            <button id="underline" typ e="button" class="btn btn-light">Underline</button>
+            <button id="left-align" type="button" class="align btn btn-light"><i class="fas fa-align-left"></i></button>
+            <button id="center -align" type="button" class="align btn btn-light"><i class="fas fa-align-center"></i></button>
+            <button id="right-align" type="button" class="align btn btn-light"><i class="fas fa-align-right"></i></button>
+         </div>
+         <hr />
+         <div class="row">
+            <div class="col-1">
+                <label for="text-input" class="label-heading">Your Document Text</label>
                 <textarea class="form-control" id="text-input" onkeydown="updateText()" rows="3"></textarea>
-            </div>          
-        </div>
-            <div class="col">
-                <label id="text-inputs">Formatted Text</label>
-                <div id="text-output" class="bg-light">
-                </div>
             </div>
+            <div class="col-2">
+                <label for="text-input" class="label-heading">Formatted Text</label>
+                <div id="text-output" class="bg-light"></div>
+            </div>
+         </div>
     </div>
-</main>
+
     <script src="script.js"></script>
 </body>
 </html>
