@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>repl.it</title>
+    <title>TextEditor</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -24,12 +24,12 @@
     <div class="row editor">
         <div class="col">
             <div class="form-group">
-                <label for="text-input">Your Document Text</label>
+                <label id="text-inputs">Your Document Text</label>
                 <textarea class="form-control" id="text-input" onkeydown="updateText()" rows="3"></textarea>
             </div>          
         </div>
             <div class="col">
-                <label for="text-input">Formatted Text</label>
+                <label id="text-inputs">Formatted Text</label>
                 <div id="text-output" class="bg-light">
                 </div>
             </div>

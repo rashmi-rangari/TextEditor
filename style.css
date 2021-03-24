@@ -8,11 +8,6 @@
 
 #text-input {
   min-height: 200px;
-  /*padding-top: 20px;*/
-}
-
-label {
-  margin-top: 10px;
 }
 
 .editor .col {
@@ -30,4 +25,19 @@ label {
 
 .underline {
   text-decoration: underline;
+}
+
+.bg-light {
+  background-color: lightblue;
+}
+
+/* #text-inputs {
+  /* padding-top: 30px;
+  margin-top: 20px; 
+  color: blueviolet;
+  vertical-align: initial;
+} */
+
+.form-group {
+  vertical-align: text-top;
 }
