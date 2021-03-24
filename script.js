@@ -24,12 +24,12 @@ function makeItalic(elem){
     document.getElementById('text-output').classList.toggle('italic');
 }
 
-// function makeUnderline(elem){
-//     elem.classList.toggle('active');
-//     let formatteText = document.getElementById('text-output').classList.toggle('underline');
-//     if(formatteText.classList.contains('underline')){
-//         formatteText.classList.remove('underline');
-//     } else{
-//         formatteText.classList.add('underline');
-//     }
-// }
+function makeUnderline(elem){
+    elem.classList.toggle('active');
+    let formatteText = document.getElementById('text-output').classList.toggle('underline');
+    if(formatteText.classList.contains('underline')){
+        formatteText.classList.remove('underline');
+    } else{
+        formatteText.classList.add('underline');
+    }
+}
