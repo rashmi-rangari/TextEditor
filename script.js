@@ -28,11 +28,11 @@ function makeItalic(elem){
 //// Toggle the underline class for ouptut text
 function makeUnderline(elem){
     elem.classList.toggle('active');
-    let formatteText = document.getElementById('text-output').classList.toggle('underline');
-    if(formatteText.classList.contains('underline')){
-        formatteText.classList.remove('underline');
+    let formattedText = document.getElementById('text-output').classList.toggle('underline');
+    if(formattedText.classList.contains('underline')){
+        formattedText.classList.remove('underline');
     } else{
-        formatteText.classList.add('underline');
+        formattedText.classList.add('underline');
     }
 }
 
